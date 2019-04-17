@@ -30,7 +30,7 @@ jobs:
   build:
     docker:
       - image: google/cloud-sdk
-    step:
+    steps:
       - setup_remote_docker:
           docker_layer_caching: true
       - run : |
