@@ -37,9 +37,9 @@ jobs:
       - run :
           name: Auth to gcloud
           command: |
-          echo $GCLOUD_KEY | gcloud auth activate-service-account --key-file=-
-          gcloud --quiet config set project ${PROJECT_ID}
-          gcloud auth configure-docker
+            echo $GCLOUD_KEY | gcloud auth activate-service-account --key-file=-
+            gcloud --quiet config set project ${PROJECT_ID}
+            gcloud auth configure-docker
       - run :
           name: Build and push docker images
           command: |
