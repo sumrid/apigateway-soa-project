@@ -30,6 +30,7 @@ jobs:
   build:
     docker:
       - image: google/cloud-sdk
+    working_directory: ~/apigateway-soa-project
     steps:
       - setup_remote_docker:
           docker_layer_caching: true
