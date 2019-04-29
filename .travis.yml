@@ -15,7 +15,7 @@ before_install:
   - gcloud --quiet components update kubectl
   - gcloud auth activate-service-account --key-file key.json
   - gcloud container clusters get-credentials soa-service --zone asia-southeast1-b --project soa-group-7-174
-  - gcloud auth configure-docker
+  - gcloud --quiet auth configure-docker
 
 script:
   - docker build -t asia.gcr.io/soa-group-7-174/api-gateway:$TRAVIS_JOB_NUMBER .
