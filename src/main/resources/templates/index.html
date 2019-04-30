@@ -29,40 +29,94 @@
 
             <!--bill service-->
             <tr>
-                <th>bill</th>
-                <th>GET</th>
+                <th>Bill</th>
+                <th class="text-info">GET</th>
                 <td>All bills</td>
                 <td><a th:href="@{/api/bill/bills}">api/bill/bills</a></td>
             </tr>
             <tr>
                 <th></th>
-                <th>GET</th>
+                <th class="text-info">GET</th>
                 <td>Get bill by id</td>
                 <td><a th:href="@{/api/bill/bills/1}">api/bill/bills/{id}</a></td>
             </tr>
             <tr>
                 <th></th>
-                <th>GET</th>
+                <th class="text-info">GET</th>
                 <td>Get by date</td>
                 <td><a th:href="@{/api/bill/bills/date/today}">api/bill/bills/date/{date}</a></td>
             </tr>
             <tr>
                 <th></th>
-                <th>GET</th>
+                <th class="text-info">GET</th>
                 <td>Get by username</td>
                 <td><a th:href="@{/api/bill/bills/name/sumrid}">api/bill/bills/name/{username}</a></td>
             </tr>
             <tr>
                 <th></th>
-                <th>GET</th>
+                <th class="text-info">GET</th>
                 <td>Get by company name</td>
                 <td><a th:href="@{/api/bill/bills/company/Inc.}">api/bill/bills/company/{company name}</a></td>
             </tr>
 
+            <!--product service-->
+            <tr>
+                <th>Product</th>
+                <th class="text-info">GET</th>
+                <td>All product</td>
+                <td><a th:href="@{/api/product/product}">api/product/product</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th class="text-info">GET</th>
+                <td>Get by product id</td>
+                <td><a th:href="@{/api/product/product/1}">api/product/product/{id}</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th class="text-success">POST</th>
+                <td>Create new product and save</td>
+                <td><a th:href="@{#}">api/product/product/save</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th class="text-warning">PUT</th>
+                <td>Update product</td>
+                <td><a th:href="@{#}">api/product/product/{id}</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th class="text-danger">DELETE</th>
+                <td>Delete product by id</td>
+                <td><a th:href="@{#}">api/product/product/{id}</a></td>
+            </tr>
+
+            <!--user service-->
+            <tr>
+                <th>User</th>
+                <th class="text-info">GET</th>
+                <td>All users</td>
+                <td><a th:href="@{/api/user/employee}">api/user/employee</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th class="text-info">GET</th>
+                <td>All users by id</td>
+                <td><a th:href="@{/api/user/employee/1}">api/user/employee/{id}</a></td>
+            </tr>
+
+            <!--stock service-->
+            <tr>
+                <th>Stock</th>
+                <th class="text-info">GET</th>
+                <td>All stocks</td>
+                <td><a th:href="@{/api/stock/stocks}">api/stock/stocks</a></td>
+            </tr>
+
             <!--report service-->
             <tr>
-                <th>report</th>
-                <th>GET</th>
+                <th>Report</th>
+                <th class="text-info">GET</th>
                 <td>All reports</td>
                 <td><a th:href="@{/api/report/reports}">api/report/reports</a></td>
             </tr>
